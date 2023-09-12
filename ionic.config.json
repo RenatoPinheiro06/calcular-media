@@ -1,0 +1,7 @@
+{
+  "name": "calcular-media",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
