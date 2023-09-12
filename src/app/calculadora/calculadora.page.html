@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Calculadora de Média
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-label position="floating">Nota 1</ion-label>
+      <ion-input [(ngModel)]="nota1" type="number"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Nota 2</ion-label>
+      <ion-input [(ngModel)]="nota2" type="number"></ion-input>
+    </ion-item>
+  </ion-list>
+
+  <ion-button expand="full" (click)="calcularMedia()">Calcular Média</ion-button>
+
+  <ion-item *ngIf="media">
+    <ion-label>Média:</ion-label>
+    <ion-text>{{ media }}</ion-text>
+  </ion-item>
+</ion-content>
